@@ -6,7 +6,7 @@ package test2;
  * 类说明：
  */
 public class Person {
-    String name;
+    public String name;
     private int age;
     public String getName() {
         return name;

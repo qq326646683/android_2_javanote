@@ -35,5 +35,15 @@ public class ReflectDemo2 {
         Method setName = personClass.getDeclaredMethod("setName", String.class);
         System.out.println(setName);
 
+        setName.invoke(nell, "nell2");
+        System.out.println("nell的名字：" + nell.getName());
+
+        System.out.println("获取指定方法");
+        Method privateMethod = personClass.getDeclaredMethod("privateMethod");
+        System.out.println(setName);
+
+        privateMethod.setAccessible(true);
+        privateMethod.invoke(nell);
+
     }
 }
