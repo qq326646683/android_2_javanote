@@ -1,4 +1,6 @@
-import test.Servant;
+package reflect;
+
+import reflect.test.Servant;
 
 public class ReflectDemo1 {
 
@@ -7,7 +9,7 @@ public class ReflectDemo1 {
         servant.ok("haha");
 
         Class servantClass1 = Servant.class;
-        Class servantClass2 = Class.forName("test.Servant");
+        Class servantClass2 = Class.forName("reflect.test.Servant");
         Servant servant1 = (Servant) servantClass1.newInstance();
         servant1.ok("hehe");
     }

@@ -1,4 +1,6 @@
-import test2.Person;
+package reflect;
+
+import reflect.test2.Person;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -6,7 +8,7 @@ import java.lang.reflect.Method;
 
 public class ReflectDemo2 {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        Class<Person> personClass = (Class<Person>) Class.forName("test2.Person");
+        Class<Person> personClass = (Class<Person>) Class.forName("reflect.test2.Person");
 
         System.out.println("获取全部");
         Constructor<Person>[] constructor = (Constructor<Person>[]) personClass.getConstructors();

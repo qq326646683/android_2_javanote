@@ -1,4 +1,4 @@
-package test;
+package reflect.test;
 
 public class Servant {
     public Servant() {

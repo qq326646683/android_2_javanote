@@ -1,4 +1,4 @@
-package test2;
+package reflect.test2;
 
 /**
  * @author Mark老师   享学课堂 https://enjoy.ke.qq.com

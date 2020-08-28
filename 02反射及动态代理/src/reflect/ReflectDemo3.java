@@ -1,11 +1,13 @@
-import test2.Person;
+package reflect;
+
+import reflect.test2.Person;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 public class ReflectDemo3 {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
-        Class<Person> personClass = (Class<Person>) Class.forName("test2.Person");
+        Class<Person> personClass = (Class<Person>) Class.forName("reflect.test2.Person");
         Field[] fields = personClass.getDeclaredFields();
         System.out.println("获取所有属性:");
         for (Field field : fields) {
